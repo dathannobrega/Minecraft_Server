@@ -1,0 +1,46 @@
+# Ignore environment file (contains secrets)
+
+
+
+# Ignore world data directories
+
+Lobby/world/
+Lobby/world\_nether/
+Lobby/world\_the\_end/
+
+Survival/world/
+Survival/world\_nether/
+Survival/world\_the\_end/
+
+Minigame/world/
+Minigame/world\_nether/
+Minigame/world\_the\_end/
+
+# Ignore logs and crash reports (server and plugins)
+
+\*\*/logs/
+crash-reports/
+\*\*/\*.log
+
+# Ignore auto-generated server files
+
+\*\*/eula.txt
+\*\*/ops.json
+\*\*/banned-players.json
+\*\*/banned-ips.json
+\*\*/usercache.json
+\*\*/whitelist.json
+
+# Ignore Velocity secret file
+
+Velocity/forwarding.secret
+
+# Ignore IDE/editor settings
+
+.idea/
+.vscode/
+
+# Ignore OS files
+
+.DS\_Store
+Thumbs.db

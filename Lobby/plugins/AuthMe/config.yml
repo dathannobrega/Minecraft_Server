@@ -207,9 +207,9 @@ settings:
         # Spawn priority; values: authme, essentials, cmi, multiverse, default
         spawnPriority: authme,essentials,cmi,multiverse,default
         # Maximum Login authorized by IP
-        maxLoginPerIp: 0
+        maxLoginPerIp: 2
         # Maximum Join authorized by IP
-        maxJoinPerIp: 0
+        maxJoinPerIp: 2
         # AuthMe will NEVER teleport players if set to true!
         noTeleport: false
         # Regex syntax for allowed chars in passwords. The default [!-~] allows all visible ASCII
@@ -457,7 +457,7 @@ Security:
         logConsole: true
     captcha:
         # Enable captcha when a player uses wrong password too many times
-        useCaptcha: false
+        useCaptcha: true
         # Max allowed tries before a captcha is required
         maxLoginTry: 5
         # Captcha length
@@ -468,18 +468,18 @@ Security:
         requireForRegistration: false
     tempban:
         # Tempban a user's IP address if they enter the wrong password too many times
-        enableTempban: false
+        enableTempban: true
         # How many times a user can attempt to login before their IP being tempbanned
         maxLoginTries: 10
         # The length of time a IP address will be tempbanned in minutes
         # Default: 480 minutes, or 8 hours
-        tempbanLength: 480
+        tempbanLength: 10
         # How many minutes before resetting the count for failed logins by IP and username
         # Default: 480 minutes (8 hours)
-        minutesBeforeCounterReset: 480
+        minutesBeforeCounterReset: 10
         # The command to execute instead of using the internal ban system, empty if disabled.
         # Available placeholders: %player%, %ip%
-        customCommand: ''
+        customCommand: '%player% Banido devido a muitas tentativas de login com senha errada. IP: %ip%'
     recoveryCode:
         # Number of characters a recovery code should have (0 to disable)
         length: 8

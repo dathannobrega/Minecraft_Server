@@ -1,0 +1,53 @@
+services:
+
+  lobby:
+    env_file: .env
+    image: openjdk:21-jdk-slim
+    container_name: mc_lobby
+    working_dir: /data
+    volumes:
+      - ./Lobby:/data
+      - ./start.sh:/start.sh:ro
+    ports:
+      - "25566:25566"
+    command: ["bash", "/start.sh", "paper-1.21.jar"]
+
+  survival:
+    env_file: .env
+    image: openjdk:21-jdk-slim
+    container_name: mc_survival
+    working_dir: /data
+    volumes:
+      - ./Survival:/data
+      - ./start.sh:/start.sh:ro
+    ports:
+      - "25567:25567"
+    command: ["bash", "/start.sh", "paper-1.21.jar"]
+
+  minigame:
+    env_file: .env
+    image: openjdk:21-jdk-slim
+    container_name: mc_minigame
+    working_dir: /data
+    volumes:
+      - ./Minigame:/data
+      - ./start.sh:/start.sh:ro
+    ports:
+      - "25568:25568"
+    command: ["bash", "/start.sh", "paper-1.21.jar"]
+
+  velocity:
+    env_file: .env
+    image: openjdk:21-jdk-slim
+    container_name: mc_velocity
+    working_dir: /data
+    depends_on:
+      - lobby
+      - survival
+      - minigame
+    volumes:
+      - ./Velocity:/data
+      - ./start.sh:/start.sh:ro
+    ports:
+      - "25565:25565"
+    command: ["bash", "/start.sh", "velocity.jar"]

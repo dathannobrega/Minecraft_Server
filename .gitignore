@@ -1,26 +1,56 @@
 # Ignore environment file (contains secrets)
 
-
+.env
 
 # Ignore world data directories
 
 Lobby/world/
 Lobby/world\_nether/
 Lobby/world\_the\_end/
+Lobby/libraries
+Lobby/cache
+Lobby/config
+Lobby/logs
 
 Survival/world/
 Survival/world\_nether/
 Survival/world\_the\_end/
+Survival/libraries
+Survival/cache
+Survival/config
+Survival/logs
+# Ignore plugin dynamic map  files
+Survival/plugins/dynmap/web/
+Survival/plugins/dynmap/texturepacks/
+Survival/plugins/dynmap/templates/
+Survival/plugins/dynmap/colorschemes/
 
+# Ignore Minigame world data directories
 Minigame/world/
 Minigame/world\_nether/
 Minigame/world\_the\_end/
+Minigame/libraries
+Minigame/cache
+Minigame/config
+Minigame/logs
 
+# Ignore plugin directories lib,libs,cache, overrides, translations
+
+*/plugins/*/lib/
+*/plugins/*/libs/
+*/plugins/*/cache/
+*/plugins/*/overrides/
+*/plugins/*/translations/
+*/plugins/.paper-remapped
+*/plugins/essentials/userdata*
+
+Velocity/logs
 # Ignore logs and crash reports (server and plugins)
 
 \*\*/logs/
 crash-reports/
-\*\*/\*.log
+*.log
+*\tmp
 
 # Ignore auto-generated server files
 

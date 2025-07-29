@@ -52,6 +52,9 @@ velocity-ping-save: true
 # It will fall back to the default option if none found.
 velocity-servers:
   default: 4
+  lobby: 767
+  minigames: 767
+  survival: 767
 #
 #----------------------------------------------------------#
 #                  GLOBAL PACKET LIMITER                   #

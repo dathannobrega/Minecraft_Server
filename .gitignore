@@ -9,7 +9,6 @@ Lobby/world\_nether/
 Lobby/world\_the\_end/
 Lobby/libraries
 Lobby/cache
-Lobby/config
 Lobby/logs
 
 Survival/world/
@@ -17,7 +16,6 @@ Survival/world\_nether/
 Survival/world\_the\_end/
 Survival/libraries
 Survival/cache
-Survival/config
 Survival/logs
 # Ignore plugin dynamic map  files
 Survival/plugins/dynmap/web/
@@ -31,7 +29,6 @@ Minigame/world\_nether/
 Minigame/world\_the\_end/
 Minigame/libraries
 Minigame/cache
-Minigame/config
 Minigame/logs
 
 # Ignore plugin directories lib,libs,cache, overrides, translations

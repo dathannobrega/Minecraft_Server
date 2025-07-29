@@ -77,3 +77,4 @@ mariadb_data/
 
 #ignore Minecraft server files
 server.properties
+*/usercache.json

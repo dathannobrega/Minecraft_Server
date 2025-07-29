@@ -123,7 +123,7 @@ database:
   # The database username. (Only required if mysql is true)
   user: quickshop_user
   # The database password. (Only required if mysql is true)
-  password: passwd431@123
+  password: passwd431adwwad123
   # Set prefix to "none" to remove prefix (Both local and remote will be used).
   prefix: qs_
   # Should QuickShop use SSL for database connections?  (Only required if mysql is true)

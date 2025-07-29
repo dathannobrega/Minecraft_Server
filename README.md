@@ -151,3 +151,4 @@ minigame = [{ address = "minigame:25568", motd = "§eMinigame", restricted = fal
 ## Configuracoes para producao
  * criacao do BD para o LuckPerms e ajeitar configuracoes *\plugins\LuckPerms\config.yml
  * Criacao do BD para AuthMe e ajeitar configuracoes *\plugins\AuthMe\config.yml
+ * Criacao do BD para o ItemJoin \Lobby\plugins\ItemJoin\config.yml

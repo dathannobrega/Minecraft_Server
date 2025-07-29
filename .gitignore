@@ -74,3 +74,9 @@ Velocity/forwarding.secret
 
 .DS\_Store
 Thumbs.db
+
+#ignore MariaDB files
+mariadb_data/
+
+#ignore Minecraft server files
+server.properties

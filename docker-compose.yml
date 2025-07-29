@@ -51,3 +51,13 @@ services:
     ports:
       - "25565:25565"
     command: ["bash", "/start.sh", "velocity.jar"]
+
+  mariadb:
+    env_file: .env
+    image: mariadb:latest
+    container_name: mc_mariadb
+    restart: unless-stopped
+    volumes:
+      - ./mariadb_data:/var/lib/mysql
+    ports:
+      - "3306:3306"

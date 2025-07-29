@@ -148,6 +148,6 @@ minigame = [{ address = "minigame:25568", motd = "§eMinigame", restricted = fal
 * Heap Java ajustável dinamicamente conforme as variáveis do `.env`.
 * Permissões unificadas e propagadas em tempo real.
 
----
-
-Para mais detalhes em cada arquivo de configuração ou plugin, consulte as respectivas documentações oficiais.
+## Configuracoes para producao
+ * criacao do BD para o LuckPerms e ajeitar configuracoes *\plugins\LuckPerms\config.yml
+ * Criacao do BD para AuthMe e ajeitar configuracoes *\plugins\LuckPerms\config.yml

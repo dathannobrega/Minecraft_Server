@@ -88,13 +88,13 @@ try = [
 
 [forced-hosts]
 # Configure your forced hosts here.
-"lobby.example.com" = [
+"lobby" = [
     "lobby"
 ]
-"factions.example.com" = [
-    "factions"
+"factions" = [
+    "survival"
 ]
-"minigames.example.com" = [
+"minigames" = [
     "minigames"
 ]
 

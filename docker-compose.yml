@@ -4,6 +4,8 @@ services:
     env_file: .env
     image: openjdk:21-jdk-slim
     container_name: mc_lobby
+    stdin_open: true   # equivalente a -i
+    tty: true  
     working_dir: /data
     volumes:
       - ./Lobby:/data
@@ -16,6 +18,8 @@ services:
     env_file: .env
     image: openjdk:21-jdk-slim
     container_name: mc_survival
+    stdin_open: true   # equivalente a -i
+    tty: true  
     working_dir: /data
     volumes:
       - ./Survival:/data
@@ -28,6 +32,8 @@ services:
     env_file: .env
     image: openjdk:21-jdk-slim
     container_name: mc_minigame
+    stdin_open: true   # equivalente a -i
+    tty: true  
     working_dir: /data
     volumes:
       - ./Minigame:/data
@@ -40,6 +46,8 @@ services:
     env_file: .env
     image: openjdk:21-jdk-slim
     container_name: mc_velocity
+    stdin_open: true   # equivalente a -i
+    tty: true  
     working_dir: /data
     depends_on:
       - lobby
